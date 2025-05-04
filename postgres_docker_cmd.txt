@@ -1,0 +1,9 @@
+docker run -d \
+  --name psql \
+  -e POSTGRES_USER=backstage \
+  -e POSTGRES_PASSWORD=backstage \
+  -e POSTGRES_DB=backstage \
+  -e PGDATA=/var/lib/postgresql/data/pgdata \
+  -v /tmp/psql:/var/lib/postgresql/data \
+  --network backstage \
+  postgres:latest
