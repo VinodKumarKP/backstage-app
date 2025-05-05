@@ -1,5 +1,3 @@
 .pnp.cjs
 .idea
 .venv
-.yarn
-.yarn.lock
